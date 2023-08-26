@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon Vacuum | 2ª  edição</title>
 
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header></header>
@@ -13,31 +15,41 @@
     <main>
 
         <section class="apresentacao">
-            <h1 class="apresentacao--titulo">HACKATHON VACUUM | 2ª EDIÇÃO.</h1>
+            <h1 class="apresentacao-titulo">Hackathon  <span class="vacuum">Vacuum</span> | 2ª edição.</h1>
+            <img src="./images/Rectangle 9barrasuperior.svg" alt="barra para sublinhar título da página">
 
-            <img class="apresentacao--logo-vacuum" alt="logo da Vacuum">
+            <img class="apresentacao--logo-vacuum" src="images/vacuum_logo.png" alt="logo da Vacuum">
 
             <h2 class="apresentacao-subtitulo"><a class="discord-vacuum" href="discord.gg/vacuum">discord.gg/vacuum</a></h2>
+            <img src="./images/Rectangle 9barrainferior.svg" alt="barra para sublinhar link do discord">
             
         </section>
 
         <section class="login">
-            <h2 class="login-bemvindo">Bem  vindo.</h2>
-            <h2 class="login-conta">Faça login na sua conta</h2>
 
-            <form action="">
-                <p>E-mail</p>
-                <input type="email">
-                
-                <p>Senha</p>
-                <input type="password">
+            <img class="elipse" src="images/Ellipse 2meialuasuperior1.svg" alt="elipse">
+            <img class="elipse" src="images/Ellipse 3meialuasuperior2.svg" alt="elipse">
+            
+            <div class="login-dados">
+                <h2 class="login-bemvindo">Bem  vindo.</h2>
+                <h2 class="login-conta">Faça login na sua conta</h2>
 
-                <input type="checkbox">Lembre de mim
-                <a href="vacuum.com/forgotpassword">Esqueceu sua senha?</a>
+                <form class="login-form" action="">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" value="vacuum@gmail.com">
+                    
+                    <p>Senha</p>
+                    <input type="password" value="**************">
+                    <br>
 
-                <input type="submit"  value="Entrar">
+                    <input type="checkbox">Lembre de mim
+                    <a href="vacuum.com/forgotpassword">Esqueceu sua senha?</a>
+                    <br>
 
-            </form>
+                    <input class="login-botao" type="submit"  value="Entrar">
+
+                </form>
+            </div>
 
             <p class="login-semconta">Não tem uma conta? <a class="login-cadastrese" href="vacuum.com/signup">Cadastre-se</a></p>
 

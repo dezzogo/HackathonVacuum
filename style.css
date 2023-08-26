@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Lato:wght@700&family=Ledger&display=swap');
+
+/* font-family: 'Coda', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Ledger', serif; */
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+    background-color: #0F0013;
+    color: #FFFFFF;
+    font-family: 'Coda', cursive;
+    text-transform: uppercase;
+}
+
+.apresentacao-titulo {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.vacuum {
+    font-weight: 800;
+}
+
+.discord-vacuum {
+    font-size: 36px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42%;
+    height: 100%;
+    padding-top: 120px;
+    background-color: #FFFFFF;
+    color: #290A34;
+    font-family: 'Coda', cursive;
+    border: 3px solid crimson;
+}
+
+.login-dados {
+    border: 3px solid crimson;
+    display: flex;
+    flex-direction: column;
+    width: 357px;
+    height: 391px;
+}
+
+.login-bemvindo, .login-conta {
+    font-weight: 400;
+}
+
+.elipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-bemvindo {
+    font-size: 16px;
+}
+
+.login-bemvindo {
+    font-size: 26px;
+}
+
+/* TO DO
+- organize html form to improve its stile (label, div);
+- form action;
+- "waterproof"
+- remove crimson borders; 
+- responsive */
+
