@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon Vacuum | 2ª  edição</title>
 
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -31,20 +30,28 @@
             <img class="elipse" src="images/Ellipse 3meialuasuperior2.svg" alt="elipse">
             
             <div class="login-dados">
-                <h2 class="login-bemvindo">Bem  vindo.</h2>
-                <h2 class="login-conta">Faça login na sua conta</h2>
+
+                <div class="login-titulos">
+                    <h2 class="login-bemvindo">Bem  vindo.</h2>
+                    <h2 class="login-conta">Faça login na sua conta</h2>
+                </div>
 
                 <form class="login-form" action="">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" value="vacuum@gmail.com">
-                    
-                    <p>Senha</p>
-                    <input type="password" value="**************">
+                    <label for="email">E-mail</label> <br>
+                    <input type="email" name="email" id="email" placeholder="vacuum@gmail.com">
                     <br>
 
-                    <input type="checkbox">Lembre de mim
-                    <a href="vacuum.com/forgotpassword">Esqueceu sua senha?</a>
-                    <br>
+                    <label for="password" name="password">Senha</label> <br>
+                    <input type="password" id="password" placeholder="**************">
+                    
+                    <div class="login-password-menu">
+
+                        <div class="login-password-checkbox">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Lembre de mim</label>
+                        </div>
+                        <a href="vacuum.com/forgotpassword">Esqueceu sua senha?</a>
+                    </div>
 
                     <input class="login-botao" type="submit"  value="Entrar">
 

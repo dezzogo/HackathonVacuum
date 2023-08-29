@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# HackathonVacuum
-Hackathon da Vacuum
-=======
 # Hackathon da Vacuum 2 ° edição.
 
 A segunda edição do Hackathon da Vacuum conta com um desafio para testar suas habilidades com o front-end.
@@ -18,4 +14,3 @@ A Vacuum é uma comunidade focada em ajudar desenvolvedores que estão entrando 
 Acesse o Link do nosso Discord através do Disboard e seja bem-vindo a nossa comunidade.
 <br>
 https://disboard.org/pt-pt/server/1055925925751046234
->>>>>>> 97d6173 (first commit, only testing)

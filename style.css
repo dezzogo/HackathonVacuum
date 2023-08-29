@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Lato:wght@700&family=Ledger&display=swap');
 
-/* font-family: 'Coda', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Ledger', serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 main {
     display: flex;
@@ -12,6 +14,7 @@ main {
 
 .apresentacao {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,7 +26,7 @@ main {
 }
 
 .apresentacao-titulo {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
@@ -40,6 +43,7 @@ main {
 
 .login {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     width: 42%;
@@ -48,15 +52,14 @@ main {
     background-color: #FFFFFF;
     color: #290A34;
     font-family: 'Coda', cursive;
-    border: 3px solid crimson;
 }
 
 .login-dados {
-    border: 3px solid crimson;
     display: flex;
     flex-direction: column;
-    width: 357px;
-    height: 391px;
+    justify-content: space-between;
+    width: 60%;
+    height: 50%;
 }
 
 .login-bemvindo, .login-conta {
@@ -70,17 +73,101 @@ main {
 }
 
 .login-bemvindo {
-    font-size: 16px;
+    font-size: 1em;
 }
 
-.login-bemvindo {
-    font-size: 26px;
+.login-form {
+    padding: 20px 0;
+    font-family: 'Ledger', serif;
 }
 
-/* TO DO
-- organize html form to improve its stile (label, div);
-- form action;
-- "waterproof"
-- remove crimson borders; 
-- responsive */
+
+.login-form input {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: none;
+}
+
+.login-password-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+#email, #password, #remember {
+    border-radius: 3px;
+    border: 1px solid #E8E8E8;
+    flex-shrink: 0;
+    font-family: 'Ledger', serif;
+}
+
+.login a {
+    text-decoration: none;
+    color: #9B51E0;
+}
+
+.login-password-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.login-password-checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    background: #F7FAFC;
+    outline: none;
+    margin-right: 8px;
+    cursor: pointer;
+}
+  
+.login-password-checkbox input[type="checkbox"]:checked {
+    background-color: #F7FAFC;
+    border: 1px solid #3498db;
+}
+
+.login-botao {
+    background-color: #290A34;
+    color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.login-semconta {
+    position: fixed;
+    bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        display: none;
+    }
+
+    .elipse {
+        display: none;
+    }
+
+    .login-titulos {
+        justify-content: end;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .login-dados {
+        width: 90%;
+        padding: 80px 30px;
+    }
+}
 
